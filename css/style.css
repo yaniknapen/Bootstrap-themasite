@@ -115,3 +115,13 @@ h5 {
   border: 1px solid rgb(24, 24, 24);
   border-bottom: none;
 }
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px); /* Laat de kaart iets omhoog komen */
+  box-shadow: 0 1px 5px 0 #9dc83b; /* Voeg een schaduw toe */
+  cursor: pointer;
+}
