@@ -1,0 +1,85 @@
+/* Voeg deze CSS toe aan je style.css */
+html,
+body {
+  height: 100%; /* Zorg ervoor dat de hoogte van de pagina altijd 100% is */
+  margin: 0; /* Verwijder standaard margin */
+}
+
+body {
+  display: flex;
+  flex-direction: column; /* Zorg ervoor dat de inhoud verticaal gestapeld wordt */
+}
+
+nav {
+  border-bottom: 1px solid rgb(75, 75, 75);
+}
+
+.container {
+  flex: 1; /* Laat de inhoud de beschikbare ruimte vullen */
+}
+
+body {
+  padding-top: 50px;
+}
+
+.carousel-item img {
+  filter: brightness(0.7); /* Donkerder maken voor beter contrast */
+}
+
+::selection {
+  background-color: #9dc83b; /* De kleur van de highlight (achtergrondkleur) */
+  color: white; /* De tekstkleur van de geselecteerde tekst */
+}
+
+/* Verander de kleur van de hamburgerknop naar wit */
+
+/* Basisinstellingen voor de navbar */
+/* Basisinstellingen voor de navbar */
+.navbar-toggler {
+  border: none; /* Verwijder de rand van de knop zelf */
+  background-color: transparent; /* Maak de achtergrond transparant */
+  transition: transform 0.3s ease; /* Voeg transitie toe voor de hamburgerknop */
+}
+
+/* Verwijder de rand wanneer het hamburgermenu geselecteerd wordt */
+.navbar-toggler:focus {
+  outline: none; /* Verwijdert de rand wanneer de knop gefocust is */
+  box-shadow: none; /* Verwijdert de schaduw die soms verschijnt */
+}
+
+/* Wanneer het menu geopend is, voeg een transitie toe aan de navigatie links */
+.navbar-collapse {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Verberg het menu met een transform wanneer het gesloten is */
+.navbar-collapse.collapsing {
+  opacity: 0;
+  transform: translateY(-10px); /* Laat het menu naar boven verdwijnen */
+}
+
+/* Achtergrond vervagen van het geopende menu */
+
+/* Zorg ervoor dat de menu-items een soepele transitie hebben bij hoveren */
+.navbar-nav .nav-link {
+  transition: color 0.3s ease; /* Maak de linkkleur soepel veranderen */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #9dc83b; /* Highlight de linkkleur */
+}
+/* Center de tekst van de navigatielinks in het geopende menu */
+.navbar-collapse {
+  text-align: center; /* Centreer de tekst binnen het menu */
+}
+
+/* Zorg ervoor dat de nav-items gecentreerd worden bij het openen van het menu */
+.navbar-nav {
+  display: flex;
+  flex-direction: column; /* Verander de richting naar kolom voor mobiele weergave */
+  align-items: center; /* Centreer de items in de kolom */
+}
+
+.navbar-nav .nav-item {
+  width: 100%; /* Zorg ervoor dat elk item de volledige breedte inneemt */
+}
