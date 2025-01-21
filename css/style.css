@@ -8,10 +8,13 @@ body {
 body {
   display: flex;
   flex-direction: column; /* Zorg ervoor dat de inhoud verticaal gestapeld wordt */
+  font-family: "Poppins", sans-serif; /* Gebruik Roboto als font */
+  line-height: 1.6; /* Zorg voor een betere leesbaarheid */
 }
 
 nav {
-  border-bottom: 1px solid rgb(75, 75, 75);
+  border-bottom: 1px solid #2d3a10;
+  border-radius: 15px;
 }
 
 .container {
@@ -20,6 +23,18 @@ nav {
 
 body {
   padding-top: 50px;
+}
+
+p {
+  color: rgb(172, 172, 172);
+}
+
+p.lead {
+  color: white;
+}
+
+span {
+  color: #9dc83b; /* Highlight de linkkleur */
 }
 
 .carousel-item img {
