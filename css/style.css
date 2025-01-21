@@ -13,7 +13,7 @@ body {
 }
 
 nav {
-  border-bottom: 1px solid #2d3a10;
+  border-bottom: 2px solid #2d3a10;
   border-radius: 15px;
 }
 
@@ -22,7 +22,7 @@ nav {
 }
 
 body {
-  padding-top: 50px;
+  padding-top: 40px;
 }
 
 p {
@@ -39,11 +39,6 @@ span {
 
 .carousel-item img {
   filter: brightness(0.7); /* Donkerder maken voor beter contrast */
-}
-
-::selection {
-  background-color: #9dc83b; /* De kleur van de highlight (achtergrondkleur) */
-  color: white; /* De tekstkleur van de geselecteerde tekst */
 }
 
 /* Verander de kleur van de hamburgerknop naar wit */

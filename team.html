@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Optic</title>
+  </head>
+  <body class="bg-black">
+    <!-- Navigatiebalk -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-black fixed-top py-2">
+      <div class="container">
+        <!-- Logo aan de linkerkant -->
+        <a class="navbar-brand" href="#">
+          <img
+            src="assets/optic-gaming-white.png"
+            alt="Mijn Logo"
+            style="width: 40px"
+          />
+        </a>
+
+        <!-- Hamburgermenu knop voor mobiele weergave -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigatielinks aan de rechterkant -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Footer -->
+    <footer class="py-4 mt-5">
+      <div class="container">
+        <!-- Gebruik flexbox voor responsieve lay-out -->
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+        >
+          <!-- Logo en rechten onder elkaar gecentreerd op kleine schermen, naast elkaar op grotere schermen -->
+          <div
+            class="d-flex flex-column align-items-center align-items-md-start mb-3 mb-md-0"
+          >
+            <img
+              src="assets/optic-wordmark-white.png"
+              alt="Optic Gaming Logo"
+              style="width: 120px"
+            />
+            <p class="mt-2 mb-0 text-muted" style="font-size: 0.875rem">
+              &copy; 2025 Yani Knapen. Alle rechten voorbehouden.
+            </p>
+          </div>
+
+          <!-- Sociale media rechts op grotere schermen, gecentreerd op kleinere schermen -->
+          <div class="d-flex justify-content-center">
+            <a
+              href="https://x.com/OpTic"
+              class="text-muted me-3"
+              target="_blank"
+            >
+              <i class="bi bi-twitter" style="font-size: 1rem"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/opticgaming"
+              class="text-muted me-3"
+              target="_blank"
+            >
+              <i class="bi bi-instagram" style="font-size: 1rem"></i>
+            </a>
+            <a
+              href="https://www.twitch.tv/opticgaming"
+              class="text-muted me-3"
+              target="_blank"
+            >
+              <i class="bi bi-twitch" style="font-size: 1rem"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
