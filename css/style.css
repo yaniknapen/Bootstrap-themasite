@@ -16,9 +16,19 @@ h1 {
   color: white;
 }
 
-nav {
-  border-bottom: 2px solid #2d3a10;
-  border-radius: 15px;
+nav::after {
+  content: ""; /* Maak een pseudo-element */
+  position: absolute;
+  bottom: 0; /* Plaats het aan de onderkant van de nav */
+  left: 5%; /* Start de fade vanaf 10% van de breedte */
+  right: 5%; /* Eindig de fade bij 90% van de breedte */
+  height: 1px; /* Hoogte van de border */
+  background: linear-gradient(
+    to right,
+    transparent,
+    #78972f,
+    transparent
+  ); /* Maak een gradient van transparant naar een kleur en weer transparant */
 }
 
 .container {
