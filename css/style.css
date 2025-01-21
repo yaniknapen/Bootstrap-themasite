@@ -12,6 +12,10 @@ body {
   line-height: 1.6; /* Zorg voor een betere leesbaarheid */
 }
 
+h1 {
+  color: white;
+}
+
 nav {
   border-bottom: 2px solid #2d3a10;
   border-radius: 15px;
@@ -33,7 +37,8 @@ p.lead {
   color: white;
 }
 
-span {
+span,
+h5 {
   color: #9dc83b; /* Highlight de linkkleur */
 }
 
@@ -99,4 +104,14 @@ span {
 .carousel-item-prev,
 .carousel-item.active {
   transition: transform 0.6s ease-in-out; /* Smooth overgang voor de schuifbeweging */
+}
+
+.card-body {
+  border: 1px solid rgb(24, 24, 24);
+  border-top: none;
+}
+
+.card-img-top {
+  border: 1px solid rgb(24, 24, 24);
+  border-bottom: none;
 }
