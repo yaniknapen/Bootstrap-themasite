@@ -94,7 +94,3 @@ span {
   flex-direction: column; /* Verander de richting naar kolom voor mobiele weergave */
   align-items: center; /* Centreer de items in de kolom */
 }
-
-.navbar-nav .nav-item {
-  width: 100%; /* Zorg ervoor dat elk item de volledige breedte inneemt */
-}
