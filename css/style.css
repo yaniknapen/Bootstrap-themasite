@@ -64,13 +64,13 @@ span {
 
 /* Wanneer het menu geopend is, voeg een transitie toe aan de navigatie links */
 .navbar-collapse {
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.1s ease, transform 0.3s ease;
 }
 
 /* Verberg het menu met een transform wanneer het gesloten is */
 .navbar-collapse.collapsing {
   opacity: 0;
-  transform: translateY(-10px); /* Laat het menu naar boven verdwijnen */
+  transform: translateY(-8px); /* Laat het menu naar boven verdwijnen */
 }
 
 /* Achtergrond vervagen van het geopende menu */
@@ -93,4 +93,15 @@ span {
   display: flex;
   flex-direction: column; /* Verander de richting naar kolom voor mobiele weergave */
   align-items: center; /* Centreer de items in de kolom */
+}
+
+/* Zorg ervoor dat de carousel items vloeiend schuiven */
+.carousel-item {
+  transition: transform 1s ease-in-out; /* Zorg voor een vloeiende overgang */
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  transition: transform 0.6s ease-in-out; /* Smooth overgang voor de schuifbeweging */
 }
