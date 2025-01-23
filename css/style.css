@@ -135,3 +135,33 @@ h5 {
   box-shadow: 0 1px 5px 0 #9dc83b; /* Voeg een schaduw toe */
   cursor: pointer;
 }
+
+/* Accordion Styling */
+.accordion-item {
+  border-color: #9dc83b; /* Green border */
+  background-color: black;
+}
+
+.accordion-button {
+  background-color: black;
+  color: #9dc83b;
+  border-color: #9dc83b;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #6c757d; /* Grey when open */
+  color: white;
+}
+
+.accordion-button:focus {
+  box-shadow: none; /* Remove focus shadow */
+}
+
+.accordion-body {
+  background-color: black;
+  color: white;
+}
+
+.accordion-button::after {
+  filter: invert(1); /* Inverts the color to white */
+}
