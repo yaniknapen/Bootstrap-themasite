@@ -1,42 +1,21 @@
-/* Voeg deze CSS toe aan je style.css */
+/* Global and Body Styles */
 html,
 body {
-  height: 100%; /* Zorg ervoor dat de hoogte van de pagina altijd 100% is */
-  margin: 0; /* Verwijder standaard margin */
+  height: 100%;
+  margin: 0;
 }
 
 body {
   display: flex;
-  flex-direction: column; /* Zorg ervoor dat de inhoud verticaal gestapeld wordt */
-  font-family: "Poppins", sans-serif; /* Gebruik Roboto als font */
-  line-height: 1.6; /* Zorg voor een betere leesbaarheid */
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  padding-top: 40px;
 }
 
+/* Typography */
 h1 {
   color: white;
-}
-
-nav::after {
-  content: ""; /* Maak een pseudo-element */
-  position: absolute;
-  bottom: 0; /* Plaats het aan de onderkant van de nav */
-  left: 5%; /* Start de fade vanaf 10% van de breedte */
-  right: 5%; /* Eindig de fade bij 90% van de breedte */
-  height: 1px; /* Hoogte van de border */
-  background: linear-gradient(
-    to right,
-    transparent,
-    #78972f,
-    transparent
-  ); /* Maak een gradient van transparant naar een kleur en weer transparant */
-}
-
-.container {
-  flex: 1; /* Laat de inhoud de beschikbare ruimte vullen */
-}
-
-body {
-  padding-top: 40px;
 }
 
 p {
@@ -49,76 +28,84 @@ p.lead {
 
 span,
 h5 {
-  color: #9dc83b; /* Highlight de linkkleur */
+  color: #9dc83b;
 }
 
-.carousel-item img {
-  filter: brightness(0.7); /* Donkerder maken voor beter contrast */
+/* Navigation Styles */
+nav::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  right: 5%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #78972f, transparent);
 }
 
-/* Verander de kleur van de hamburgerknop naar wit */
-
-/* Basisinstellingen voor de navbar */
-/* Basisinstellingen voor de navbar */
 .navbar-toggler {
-  border: none; /* Verwijder de rand van de knop zelf */
-  background-color: transparent; /* Maak de achtergrond transparant */
-  transition: transform 0.3s ease; /* Voeg transitie toe voor de hamburgerknop */
+  border: none;
+  background-color: transparent;
+  transition: transform 0.3s ease;
 }
 
-/* Verwijder de rand wanneer het hamburgermenu geselecteerd wordt */
 .navbar-toggler:focus {
-  outline: none; /* Verwijdert de rand wanneer de knop gefocust is */
-  box-shadow: none; /* Verwijdert de schaduw die soms verschijnt */
+  outline: none;
+  box-shadow: none;
 }
 
-/* Wanneer het menu geopend is, voeg een transitie toe aan de navigatie links */
 .navbar-collapse {
   transition: opacity 0.1s ease, transform 0.3s ease;
+  text-align: center;
 }
 
-/* Verberg het menu met een transform wanneer het gesloten is */
 .navbar-collapse.collapsing {
   opacity: 0;
-  transform: translateY(-8px); /* Laat het menu naar boven verdwijnen */
+  transform: translateY(-8px);
 }
 
-/* Achtergrond vervagen van het geopende menu */
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-/* Zorg ervoor dat de menu-items een soepele transitie hebben bij hoveren */
 .navbar-nav .nav-link {
-  transition: color 0.3s ease; /* Maak de linkkleur soepel veranderen */
+  transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #9dc83b; /* Highlight de linkkleur */
-}
-/* Center de tekst van de navigatielinks in het geopende menu */
-.navbar-collapse {
-  text-align: center; /* Centreer de tekst binnen het menu */
+  color: #9dc83b;
 }
 
-/* Zorg ervoor dat de nav-items gecentreerd worden bij het openen van het menu */
-.navbar-nav {
-  display: flex;
-  flex-direction: column; /* Verander de richting naar kolom voor mobiele weergave */
-  align-items: center; /* Centreer de items in de kolom */
+/* Layout */
+.container {
+  flex: 1;
 }
 
-/* Zorg ervoor dat de carousel items vloeiend schuiven */
+/* Image and Carousel Styles */
+.carousel-item img {
+  filter: brightness(0.7);
+}
+
 .carousel-item {
-  transition: transform 1s ease-in-out; /* Zorg voor een vloeiende overgang */
+  transition: transform 1s ease-in-out;
 }
 
 .carousel-item-next,
 .carousel-item-prev,
 .carousel-item.active {
-  transition: transform 0.6s ease-in-out; /* Smooth overgang voor de schuifbeweging */
+  transition: transform 0.6s ease-in-out;
 }
 
-.card-body {
-  border: 1px solid rgb(24, 24, 24);
-  border-top: none;
+/* Card Styles */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1px 5px 0 #9dc83b;
+  cursor: pointer;
 }
 
 .card-img-top {
@@ -126,19 +113,14 @@ h5 {
   border-bottom: none;
 }
 
-.card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.card-body {
+  border: 1px solid rgb(24, 24, 24);
+  border-top: none;
 }
 
-.card:hover {
-  transform: translateY(-3px); /* Laat de kaart iets omhoog komen */
-  box-shadow: 0 1px 5px 0 #9dc83b; /* Voeg een schaduw toe */
-  cursor: pointer;
-}
-
-/* Accordion Styling */
+/* Accordion Styles */
 .accordion-item {
-  border-color: #9dc83b; /* Green border */
+  border-color: #9dc83b;
   background-color: black;
 }
 
@@ -149,12 +131,12 @@ h5 {
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: #6c757d; /* Grey when open */
+  background-color: #6c757d;
   color: white;
 }
 
 .accordion-button:focus {
-  box-shadow: none; /* Remove focus shadow */
+  box-shadow: none;
 }
 
 .accordion-body {
@@ -163,5 +145,5 @@ h5 {
 }
 
 .accordion-button::after {
-  filter: invert(1); /* Inverts the color to white */
+  filter: invert(1);
 }
